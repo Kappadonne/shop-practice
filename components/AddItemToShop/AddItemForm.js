@@ -48,7 +48,7 @@ const AddItemForm = (props) => {
         ></input>
       </div>
       <div>
-        <p>Image</p>
+        <p>Image URL</p>
         <label htmlFor="image"></label>
         <input
           onChange={(e) => setShowMessage(false)}

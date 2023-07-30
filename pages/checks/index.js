@@ -6,9 +6,15 @@ const Checks = (props) => {
       <h3>
         Here you can see all orders information that are stored in a database
       </h3>
-      {props.messages.map((infoArray) => {
-        return <p>{infoArray.message}</p>;
-      })}
+      <ul>
+        {props.messages.map((infoArray) => {
+          return (
+            <li className={classes.orderItem} key={infoArray._id}>
+              <p>{infoArray.message}</p>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

@@ -29,16 +29,19 @@ export default function Home() {
           }
           width={250}
           height={200}
+          alt="react-logo"
         ></Image>
         <Image
           src={"https://www.quanle.me/wp-content/uploads/2021/07/nextjs.png"}
           width={250}
           height={200}
+          alt="next-logo"
         ></Image>
         <Image
           src={"https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"}
           width={250}
           height={200}
+          alt="redux-logo"
         ></Image>
       </div>
     </main>

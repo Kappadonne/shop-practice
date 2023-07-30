@@ -29,9 +29,9 @@ const Checkout = () => {
         <h4 className={classes.orderTitle}>Here is your final order:</h4>
       )}
 
-      <div>
+      <ul>
         {choosenItems.map((item) => (
-          <div className={classes.order}>
+          <li className={classes.order} key={item.id}>
             <div className={classes.orderName}>
               <h2>{item.title}</h2>
               <Image
@@ -85,9 +85,9 @@ const Checkout = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
       <div className={classes.orderOptions}>
         <h3>Your total price is: {totalPrice}$</h3>
       </div>
