@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 23px;
+}
+.price{
+    font-size: 18px;
+}
+.button{
+    background-color: brown;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    padding: 5px
+
+}
+.button:active{
+    transform: translateY(4px);
+    color: brown;
+    background-color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 10px;
+    color: brown;
+    background-color: white;
+}
+
+.discount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:white;
+    font-size: 15px;
+    background-color: brown;
+}
+
+.priceContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

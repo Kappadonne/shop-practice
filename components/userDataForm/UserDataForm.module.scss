@@ -1,0 +1,50 @@
+.button{
+    margin-top: 10px;
+    background-color: brown;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+
+}
+.button:hover{
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 10px;
+    color: brown;
+    background-color: white;
+}
+
+.button:active{
+    transform: translateY(4px);
+    color: brown;
+    background-color: white;
+}
+
+.form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.form input{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.form input:focus{
+    outline: none;
+}
+
+.formInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

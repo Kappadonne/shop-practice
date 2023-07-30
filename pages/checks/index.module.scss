@@ -1,0 +1,15 @@
+.checkContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    animation: check 0.5s forwards;
+}
+
+
+@keyframes check {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }

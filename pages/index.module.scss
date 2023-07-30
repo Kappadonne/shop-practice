@@ -1,0 +1,33 @@
+.mainPage{
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    animation: main 0.5s forwards;
+
+}
+
+@keyframes main {
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+
+.title{
+    font-size: 26px;
+}
+
+.info{
+    margin-top: 30px;
+    line-height: 30px
+}
+
+.imagesContainer{
+    margin-top: 50px;
+    display: flex;
+    gap: 10%;    
+
+}
