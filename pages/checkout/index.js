@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
 import classes from "./index.module.scss";
 import { addItem, deleteItem } from "../../store/checkoutSlice";
-import UserDataForm from "../../components/userDataForm/userDataForm";
+import UserDataForm from "../../components/userDataForm/UserDataForm";
 
 const Checkout = () => {
   const choosenItems = useSelector((state) => state.checkout.items);
