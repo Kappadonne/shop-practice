@@ -61,7 +61,7 @@ const ItemCard = (props) => {
       <div>
         <Image src={img} width={250} height={250} alt="sneakers image"></Image>
         <p className={classes.title}>{title}</p>
-        {discount ? <p className={classes.discount}>DISCOUNT!</p> : null}
+        {discount ? <span className={classes.discount}>DISCOUNT!</span> : null}
       </div>
       <div className={classes.priceContainer}>
         <p className={classes.price}>{price}$</p>
@@ -77,12 +77,14 @@ const ItemCard = (props) => {
             Delete 1
           </button>
         )}
+
         {onDetails ? null : (
           <button href="/" className={classes.button} onClick={itemPage}>
             Item page
           </button>
         )}
       </div>
+      <div className={classes.options}></div>
     </div>
   );
 };

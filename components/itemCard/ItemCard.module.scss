@@ -4,8 +4,10 @@
     position: relative;
 }
 .options{
+    
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .title{
     font-size: 23px;
@@ -14,34 +16,45 @@
     font-size: 18px;
 }
 .button{
-    background-color: brown;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    outline: none;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.175rem - 1px) calc(.380rem - 1px);
     text-decoration: none;
-    padding: 5px
-
+    transition: all 250ms;
 }
-.button:active{
-    transform: translateY(4px);
-    color: brown;
-    background-color: white;
+.button:hover, .button:focus{
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .button:hover{
-    cursor: pointer;
-    transition: all .3s;
-    border-radius: 10px;
-    color: brown;
-    background-color: white;
+    transform: translateY(-1px);
 }
-
+.button:active{
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
 .discount{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     color:white;
     font-size: 15px;
     background-color: brown;
