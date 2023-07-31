@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 const Checks = (props) => {
   return (
     <div className={classes.checkContainer}>
-      <h3>
+      <h3 className={classes.orderInfo}>
         Here you can see all orders information that are stored in a database
       </h3>
       <ul>

@@ -7,7 +7,9 @@
     gap: 25px;
     animation: check 0.5s forwards;
 }
-
+.orderInfo{
+  text-align: center;
+}
 
 @keyframes check {
     0% {opacity: 0}
@@ -15,5 +17,6 @@
   }
 
   .orderItem{
-    line-height: 35px;
+    margin-top: 20px;
+    
   }

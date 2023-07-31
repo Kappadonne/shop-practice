@@ -14,22 +14,22 @@ const Navigation = () => {
           <div className={classes.navigationContainer}>
             <li>
               <Link className={classes.links} href="/">
-                Info
+                <span>Info</span>
               </Link>
             </li>
             <li>
               <Link className={classes.links} href="/shop">
-                Shop
+                <span>Shop</span>
               </Link>
             </li>
             <li>
               <Link className={classes.links} href="/addItem">
-                Add Item
+                <span className={classes.linkName}>Add Item</span>
               </Link>
             </li>
             <li>
               <Link className={classes.links} href="/checks">
-                Checks
+                <span>Checks</span>
               </Link>
             </li>
           </div>

@@ -2,15 +2,18 @@ $links-text-color: white;
 $font-size: 21px;
 
 .header{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     font-size: $font-size;
     background-color: brown;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    width: 100vw;
 }
 
 .container{
@@ -18,9 +21,10 @@ $font-size: 21px;
 }
 .navigation{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 15%;
+    width: 100%
     
 }
 .navigationContainer{
@@ -28,7 +32,8 @@ $font-size: 21px;
     justify-content: center;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
+    white-space: nowrap;
     
 }
 
@@ -36,11 +41,18 @@ $font-size: 21px;
     text-decoration: none;
     outline: none;
     color: $links-text-color;
+    word-wrap: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    flex-wrap: nowrap;
+   
+    width: 100%;
+    max-width: fit-content;
+}
+.linkName{
+    
+   
+    
+
 }
 .links:hover{
     color:rgb(229, 140, 140)
@@ -49,15 +61,48 @@ $font-size: 21px;
 .checkout{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    
 }
 
 .itemsAmount{
     color: white;
-    display: inline;
+    display: inline-flex;
 }
-
 .shopCart{
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
 }
 
+@media (max-width: 1000px) {
+    .header{
+        font-size: 17px
+    } 
+    .navigationContainer{
+        gap: 20px;
+    }
+    .navigation{
+        gap: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .header{
+        font-size: 14px
+    } 
+}
+
+
+
+@media (max-width: 350px) {
+    .header{
+        font-size: 12.5px;
+    }
+    .navigationContainer{
+        gap: 10px;
+    }
+    .navigation{
+        gap: 5px;
+    }
+}
