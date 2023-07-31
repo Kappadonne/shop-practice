@@ -40,7 +40,9 @@ const Navigation = () => {
                 <span>Checkout</span>
                 {itemsInCheckout === 0 ? null : (
                   <span className={classes.shopCart}>
-                    <FontAwesomeIcon height={20} width={20} icon={faShop} />
+                    <span>
+                      <FontAwesomeIcon height={20} width={20} icon={faShop} />
+                    </span>
                     <span className={classes.itemsAmount}>
                       {itemsInCheckout}
                     </span>

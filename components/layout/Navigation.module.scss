@@ -44,16 +44,11 @@ $font-size: 21px;
     word-wrap: none;
     display: flex;
     flex-wrap: nowrap;
-   
+    gap: 5px;
     width: 100%;
     max-width: fit-content;
 }
-.linkName{
-    
-   
-    
 
-}
 .links:hover{
     color:rgb(229, 140, 140)
 }
