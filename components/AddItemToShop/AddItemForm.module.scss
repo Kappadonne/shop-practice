@@ -12,29 +12,33 @@
     100% {opacity: 1;}
 }
 .button{
-    margin-top: 10px;
-    background-color: brown;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    text-decoration: none;
-    height: 50px;
-    width: 100px;
-}
-.button:hover{
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
-    transition: all .3s;
-    border-radius: 10px;
-    color: brown;
-    background-color: white;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(1.5rem - 1px) calc(2rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+}
+.button:hover, .button:focus{
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
 }
 
-.button:active{
-    transform: translateY(4px);
-    color: brown;
-    background-color: white;
+.button:hover{
+    transform: translateY(-1px);
 }
 
 .form input{
