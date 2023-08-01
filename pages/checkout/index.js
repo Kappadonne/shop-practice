@@ -34,12 +34,15 @@ const Checkout = () => {
           <li className={classes.order} key={item.id}>
             <div className={classes.orderName}>
               <h2>{item.title}</h2>
-              <Image
-                width={100}
-                height={100}
-                src={item.img}
-                alt="sneakers image"
-              ></Image>
+              <div className={classes.imageContainer}>
+                <Image
+                  className={classes.image}
+                  width={100}
+                  height={100}
+                  src={item.img}
+                  alt="sneakers image"
+                ></Image>
+              </div>
             </div>
             <div className={classes.orderDetails}>
               <p>price: {item.price}$</p>
