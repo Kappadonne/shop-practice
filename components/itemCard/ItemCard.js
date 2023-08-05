@@ -24,7 +24,7 @@ const ItemCard = (props) => {
   const firstPrice = itemExists.map((data) => data.firstPrice);
   const totalQuantity = itemExists.map((data) => data.totalQuantity);
 
-  const kek = itemExists.map((item) => item.totalQuantity);
+  const currentlyInCart = itemExists.map((item) => item.totalQuantity);
 
   const add = () => {
     dispatch(
@@ -65,7 +65,7 @@ const ItemCard = (props) => {
       </div>
       <div className={classes.priceContainer}>
         <p className={classes.price}>{price}$</p>
-        {itemExists.length >= 1 && <p>currently in cart: {kek}</p>}
+        {itemExists.length >= 1 && <p>currently in cart: {currentlyInCart}</p>}
       </div>
       <div className={classes.options}>
         <button onClick={add} className={classes.button}>
